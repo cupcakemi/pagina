@@ -1,0 +1,337 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+font-family: "Minecraftia";
+src: url("../fonts/Minecraftia.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+body {
+font-family: "Minecraftia", sans-serif;
+}
+html {
+  font-family: var(--mc-legends-fontlist);
+  font-size: 16px;
+}
+header{
+    background-color: rgb(37, 37, 37);
+    margin: 0;
+    text-align: center;
+}
+.nav{
+    background-color: rgb(53, 136, 33);
+
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+
+    height: 60px;
+    position: relative; 
+}
+
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: 'Minecraftia', sans-serif;
+    font-size: 14px;
+
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.nav-links li a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+.btn-login{
+    position: absolute;
+    right: 20px;
+
+    background-color: rgb(37, 37, 37);
+    color: antiquewhite;
+
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 14px;
+
+    border: 2px solid antiquewhite;
+    transition: 0.2s;
+}
+
+.btn-login:hover{
+    background-color: antiquewhite;
+    color: rgb(37, 37, 37);
+}
+.soporte{
+    text-align: center;
+    color:antiquewhite;
+    font-family: 'Minecraftia', sans-serif;
+}
+.clearfix{
+    clear:both;
+}
+footer{
+    background-color:rgb(8, 8, 8);
+    color:antiquewhite;
+    text-align:center;
+}
+.redes{
+    background-color:rgb(53, 136, 33);
+    color:antiquewhite;
+    text-align:center;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url('../imagenes/fondo.jpg');
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.contenedor-ayuda{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    width: 80%;
+    margin: 30px auto;
+}
+.card-ayuda{
+    width: 100%;
+    background-color: rgba(37, 37, 37, 0.9);
+    border: 3px solid rgb(53, 136, 33);
+    border-radius: 10px;
+    padding: 15px;
+}
+.contenedor-ayuda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-ayuda{
+    width: calc(50% - 20px);
+}
+
+.card-ayuda h3{
+    color: rgb(120, 255, 120);
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card-ayuda a{
+    display: block;
+    text-decoration: none;
+    color: antiquewhite;
+    margin: 8px 0;
+}
+
+.card-ayuda a p{
+    font-size: 12px; 
+    line-height: 1.4;
+}
+
+.card-ayuda a:hover{
+    color: rgb(120, 255, 120);
+}
+.enlaces{
+    width: 40%;
+    margin: 30px auto;
+    padding: 20px;
+
+    background-color: rgba(37, 37, 37, 0.9);
+    border: 3px solid rgb(53, 136, 33);
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.enlaces h2{
+    font-size: 24px;
+    color: antiquewhite;
+    margin-bottom: 15px;
+}
+
+.enlaces a{
+    display: block;
+    font-size: 12px;   
+    color: antiquewhite;
+    text-decoration: none;
+    margin: 6px 0;
+}
+
+.enlaces a:hover{
+    color: rgb(120, 255, 120);
+}
+
+/* ==========================================
+   FORMULARIO DE SOPORTE
+========================================== */
+
+.formulario-soporte {
+    width: 70%;
+    max-width: 800px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    background-color: rgba(37, 37, 37, 0.95);
+
+    border: 3px solid rgb(53, 136, 33);
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+.formulario-soporte h2 {
+    color: antiquewhite;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+
+.formulario-soporte > p {
+    color: antiquewhite;
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+}
+
+
+/* ==========================================
+   CAMPOS
+========================================== */
+
+.campo-soporte {
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+
+.campo-soporte label {
+    color: rgb(120, 255, 120);
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+
+.campo-soporte input,
+.campo-soporte textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 2px solid rgb(53, 136, 33);
+
+    border-radius: 6px;
+
+    background-color: rgb(25, 25, 25);
+
+    color: antiquewhite;
+
+    font-family: 'Minecraftia', sans-serif;
+
+    font-size: 12px;
+
+    outline: none;
+}
+
+
+.campo-soporte input:focus,
+.campo-soporte textarea:focus {
+
+    border-color: rgb(120, 255, 120);
+
+    box-shadow: 0 0 8px rgba(120, 255, 120, 0.3);
+}
+
+
+.campo-soporte textarea {
+
+    min-height: 150px;
+
+    resize: vertical;
+}
+
+
+.campo-soporte input::placeholder,
+.campo-soporte textarea::placeholder {
+
+    color: rgb(160, 160, 160);
+}
+
+
+/* ==========================================
+   BOTÓN ENVIAR
+========================================== */
+
+.btn-enviar-soporte {
+
+    padding: 12px 25px;
+
+    background-color: rgb(53, 136, 33);
+
+    color: antiquewhite;
+
+    border: 2px solid antiquewhite;
+
+    border-radius: 7px;
+
+    font-family: 'Minecraftia', sans-serif;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.btn-enviar-soporte:hover {
+
+    background-color: rgb(120, 255, 120);
+
+    color: rgb(37, 37, 37);
+
+    transform: scale(1.03);
+}

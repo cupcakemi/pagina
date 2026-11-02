@@ -1,0 +1,795 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+font-family: "Minecraftia";
+src: url("../fonts/Minecraftia.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+body {
+font-family: "Minecraftia", sans-serif;
+}
+html {
+  font-family: var(--mc-legends-fontlist);
+  font-size: 16px;
+}
+header{
+    background-color: rgb(37, 37, 37);
+    margin: 0;
+    text-align: center;
+}
+.nav{
+    background-color: rgb(53, 136, 33);
+
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+
+    height: 60px;
+    position: relative; 
+}
+
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: 'Minecraftia', sans-serif;
+    font-size: 14px;
+
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.nav-links li a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+.btn-login{
+    position: absolute;
+    right: 20px;
+
+    background-color: rgb(37, 37, 37);
+    color: antiquewhite;
+
+    padding: 8px 14px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 14px;
+
+    border: 2px solid antiquewhite;
+    transition: 0.2s;
+}
+
+.btn-login:hover{
+    background-color: antiquewhite;
+    color: rgb(37, 37, 37);
+}
+.clearfix{
+    clear:both;
+}
+footer{
+    background-color:rgb(8, 8, 8);
+    color:antiquewhite;
+    text-align:center;
+}
+.redes{
+    background-color:rgb(53, 136, 33);
+    color:antiquewhite;
+    text-align:center;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url('../imagenes/fondo.jpg');
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
+.tutoriales{
+    color: antiquewhite;
+    font-family: 'Minecraftia', sans-serif;
+    text-align: center;
+}
+
+main section a img {
+    border: 4px solid #2c2c2c; 
+    border-radius: 8px;       
+    padding: 5px;           
+    background-color: rgb(240, 239, 236);   
+    transition: transform 0.3s;   
+}
+
+main section a img:hover {
+    transform: scale(1.05);
+    border-color: #538821;         
+}
+
+main section:first-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;                     
+    padding: 20px;
+}
+
+main section h2 {
+    width: 100%;                  
+    text-align: center;
+    color: antiquewhite;
+}
+.video {
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.video h2 {
+    background-color: #2c2c2c;
+    border: 3px solid #555;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-family: 'Minecraftia', sans-serif;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    border: 4px solid #555;
+    border-radius: 10px;
+}
+
+.guia img{
+    color: antiquewhite;
+    font-family: 'Minecraftia', sans-serif;
+    text-align: center;
+    border: 4px solid #2c2c2c; 
+    border-radius: 8px;       
+    padding: 5px;           
+    background-color: rgb(240, 239, 236);   
+    transition: transform 0.3s;
+}
+
+.guia img:hover{
+    transform: scale(1.05);
+    border-color: #538821;         
+}
+
+
+.guia {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Minecraftia', sans-serif;
+}
+
+.guia h2 {
+    background-color: #2c2c2c;
+    border: 3px solid #555;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+
+.manuales {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-items: center;
+}
+
+
+
+.manual {
+    width: 100%;
+    max-width: 300px;
+
+    background-color: #2c2c2c;
+    border: 3px solid #555;
+    border-radius: 10px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+
+
+.manual:hover {
+    transform: translateY(-5px);
+    border-color: #538821;
+}
+
+
+
+
+.manual img {
+    width: 100%;
+    height: 380px;
+
+    object-fit: cover;
+
+    border: 4px solid #2c2c2c;
+    border-radius: 8px;
+
+    padding: 5px;
+
+    background-color: rgb(240, 239, 236);
+
+    transition: transform 0.3s;
+}
+
+
+
+
+.manual img:hover {
+    transform: scale(1.03);
+}
+
+
+
+
+.manual h3 {
+    color: antiquewhite;
+
+    font-family: 'Minecraftia', sans-serif;
+
+    font-size: 15px;
+
+    margin: 15px 0;
+}
+
+
+
+.manual button {
+    background-color: rgb(53, 136, 33);
+
+    color: antiquewhite;
+
+    font-family: 'Minecraftia', sans-serif;
+
+    font-size: 14px;
+
+    border: 2px solid #1e4d13;
+    border-radius: 6px;
+
+    padding: 10px 25px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+
+
+.manual button:hover {
+    background-color: #65a83d;
+
+    transform: scale(1.05);
+}
+
+
+
+@media (max-width: 1000px) {
+
+    .manuales {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .manuales {
+        grid-template-columns: 1fr;
+    }
+
+    .manual {
+        max-width: 320px;
+    }
+
+}
+
+
+.cartel-carrito {
+    position: fixed;
+
+    bottom: 30px;
+    right: 30px;
+
+    width: 320px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 18px;
+
+    background-color: #2c2c2c;
+
+    border: 3px solid #538821;
+    border-radius: 10px;
+
+    color: antiquewhite;
+
+    font-family: 'Minecraftia', sans-serif;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+
+
+    transform: translateX(400px);
+
+    opacity: 0;
+
+    transition: 0.5s;
+
+    z-index: 9999;
+}
+
+
+
+
+.cartel-carrito.mostrar {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+
+.icono-carrito {
+    font-size: 35px;
+}
+
+
+
+
+.cartel-carrito strong {
+    color: #6fbd45;
+    font-size: 15px;
+}
+
+
+
+
+.cartel-carrito p {
+    margin-top: 8px;
+    margin-bottom: 0;
+
+    color: white;
+
+    font-size: 12px;
+}
+
+
+
+.btn-iniciar {
+    display: block;
+
+    margin-top: 12px;
+
+    padding: 8px 15px;
+
+    background-color: #538821;
+    color: white;
+
+    border: 2px solid #315414;
+    border-radius: 5px;
+
+    font-family: 'Minecraftia', sans-serif;
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-iniciar:hover {
+    background-color: #6fb83c;
+    transform: scale(1.05);
+}
+
+
+.cartel-carrito {
+    position: fixed;
+
+    bottom: 30px;
+    right: 30px;
+
+    width: 350px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    background-color: #2c2c2c;
+
+    border: 3px solid #538821;
+    border-radius: 10px;
+
+    color: antiquewhite;
+
+    font-family: 'Minecraftia', sans-serif;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+
+    transform: translateX(400px);
+
+    opacity: 0;
+
+    transition: 0.5s;
+
+    z-index: 9999;
+}
+
+
+
+
+.cartel-carrito.mostrar {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+
+.icono-carrito {
+    font-size: 35px;
+    min-width: 40px;
+}
+
+
+
+
+.contenido-cartel {
+    flex: 1;
+}
+
+
+
+.cartel-carrito strong {
+    display: block;
+
+    color: #6fbd45;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+
+
+
+.cartel-carrito p {
+    margin: 0;
+
+    color: white;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+
+.btn-iniciar {
+    margin-top: 12px;
+
+    padding: 8px 14px;
+
+    background-color: #538821;
+
+    color: white;
+
+    border: 2px solid #315414;
+    border-radius: 5px;
+
+    font-family: 'Minecraftia', sans-serif;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.btn-iniciar:hover {
+    background-color: #6fb83c;
+
+    transform: scale(1.05);
+}
+
+
+.btn-carrito{
+    position: absolute;
+    right: 180px;
+
+    background-color: #2c2c2c;
+    color: antiquewhite;
+
+    padding: 8px 14px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-family: 'Minecraftia', sans-serif;
+    font-size: 12px;
+
+    border: 2px solid antiquewhite;
+
+    transition: 0.2s;
+}
+
+.btn-carrito:hover {
+    background-color: antiquewhite;
+    color: #2c2c2c;
+}
+
+
+
+#contador-carrito {
+    background-color: #538821;
+
+    color: white;
+
+    padding: 3px 7px;
+
+    border-radius: 50%;
+
+    margin-left: 5px;
+}
+
+
+.ventana-carrito {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.75);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    transition: 0.3s;
+
+    z-index: 10000;
+}
+
+
+.ventana-carrito.mostrar-carrito {
+    opacity: 1;
+}
+
+
+
+.carrito-contenido {
+
+    position: relative;
+
+    width: 450px;
+    max-width: 90%;
+
+    max-height: 80vh;
+
+    overflow-y: auto;
+
+    padding: 30px;
+
+    background-color: #2c2c2c;
+
+    border: 4px solid #538821;
+
+    border-radius: 10px;
+
+    color: antiquewhite;
+
+    text-align: center;
+
+    font-family: 'Minecraftia', sans-serif;
+
+    box-shadow: 0 10px 30px black;
+}
+
+
+.carrito-icono {
+    font-size: 50px;
+
+    margin-bottom: 10px;
+}
+
+
+.carrito-contenido h2 {
+    color: #6fbd45;
+
+    margin-bottom: 10px;
+}
+
+
+.cantidad-carrito {
+    color: #ccc;
+
+    font-size: 12px;
+
+    margin-bottom: 20px;
+}
+
+
+
+.lista-carrito {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+
+.producto-carrito {
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #3a3a3a;
+
+    border: 2px solid #555;
+
+    padding: 12px;
+
+    border-radius: 5px;
+
+    text-align: left;
+
+    font-size: 11px;
+}
+
+
+.producto-carrito button {
+
+    background-color: #8b2020;
+
+    color: white;
+
+    border: 2px solid #571313;
+
+    padding: 5px 8px;
+
+    cursor: pointer;
+
+    border-radius: 4px;
+}
+
+
+.producto-carrito button:hover {
+    background-color: #b52b2b;
+}
+
+
+
+.cerrar-carrito {
+
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    background-color: #555;
+
+    color: white;
+
+    border: 2px solid #222;
+
+    border-radius: 5px;
+
+    padding: 5px 10px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+.cerrar-carrito:hover {
+    background-color: #777;
+}
+
+
+.btn-finalizar {
+
+    width: 100%;
+
+    padding: 12px;
+
+    background-color: #538821;
+
+    color: white;
+
+    border: 3px solid #315414;
+
+    font-family: 'Minecraftia', sans-serif;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    box-shadow: 0 4px 0 #315414;
+}
+
+
+.btn-finalizar:hover {
+    background-color: #6fb83c;
+}
+
+
+.btn-finalizar:active {
+    transform: translateY(4px);
+
+    box-shadow: none;
+}
+
+
+
+@media (max-width: 700px) {
+
+    .btn-carrito {
+        position: static;
+
+        margin-left: 10px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+
+        height: auto;
+
+        padding: 10px;
+    }
+
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Minecraft</title>
+        <script src="https://kit.fontawesome.com/5a40b7e0db.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/minecraftia">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../css/tutoriales.css">
+    </head>
+
+    <body>
+
+        <header>
+
+            <img src="../imagenes/Global-Header_MCCB-Logo_300x51.svg" loading="lazy" width="275" height= "100">
+
+            <nav class="nav">
+
+                <ul class="nav-links">
+                    <li><a href="../index.html">Noticias</a></li>
+                    <li><a href="ediciones.html">Ediciones</a></li>
+                    <li><a href="tutoriales.html">Tutoriales</a></li>
+                    <li><a href="mas_info.html">Más Información</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                    <script src="../js/login.js"></script>
+                    <script src="../js/mensajes.js"></script>
+                </ul>
+
+                <a href="iniciar.html" class="btn-login">Iniciar sesión</a>
+
+
+                <a href="#" class="btn-carrito" onclick="mostrarCarrito(); return false;">
+                    🛒 Carrito
+                    <span id="contador-carrito">0</span>
+                </a>
+
+
+            </nav>
+            
+
+        </header>
+
+        <main>
+
+            <section class="tutoriales">
+
+                <h2>Más Populares</h2>
+
+                <a href="chest_armoire.html">
+                    <img src="../imagenes/Spruce-Chest-Armoire-1-pq60plqjc9l4xh16oar9r46ptuntfk8kq68t24ymhk.webp"
+                    width="300"
+                    height="300">
+                </a>
+
+                <a href="storage.html">
+                    <img src="../imagenes/Almars-Storage-pq60om0o4k88oah2gvbg4d7797jvb2arx9gctmfl20.webp"
+                    width="300"
+                    height="300">
+                </a>
+
+                <a href="garden_gate.html">
+                    <img src="../imagenes/Spruce-Garden-Gate-pvvtsnfs4kt1pb4521618z3l4gzuqn4kmhg3u83yoo.png"
+                    width="300"
+                    height="300">
+                </a>
+
+                <a href="chest_furniture.html">
+                    <img src="../imagenes/Double-Chest-Furniture-pq60oqpv2qeoaca8pfckyu0i84wpdjtflwps808m6w.png"
+                    width="300"
+                    height="300">
+                </a>
+
+                <a href="log_pile.html">
+                    <img src="../imagenes/Log-Pile.png"
+                    width="300"
+                    height="300">
+                </a>
+
+                <a href="rustic_street_lamp.html">
+                    <img src="../imagenes/Rustic-Street-Lamp-pq619beoo6kmf2eckbiljn3qbrhxv1hx3qsee1qdzs.png"
+                    width="300"
+                    height="300">
+                </a>
+
+                <a href="small_spruce_cart.html">
+                    <img src="../imagenes/Small-Spruce-Cart-pq619moqy702adxyqge4dk99gdycfeqp5am85d9nx4.png"
+                    width="300"
+                    height="300">
+                </a>
+
+                <a href="amethyst.html">
+                    <img src="../imagenes/Amethyst-Beacon-1-pwjjc46x76e23jr98ncbpi7y0f8abm18xbfqn26vdk.png"
+                    width="300"
+                    height="300">
+                </a>
+
+            </section>
+
+            <section class="video">
+
+                <h2>Tutorial de Minecraft</h2>
+
+                <iframe
+                    src="https://www.youtube.com/embed/0jrkmjfiaIg?start=440"
+                    title="Tutorial de Minecraft"
+                    allowfullscreen>
+                </iframe>
+
+            </section>
+
+            <section class="guia">
+            
+                <h2>Nuestros Manuales</h2>
+            
+                <div class="manuales">
+            
+                    <div class="manual">
+                        <img src="../imagenes/fe128c04ce31cf312e8d34352bd12919.webp"
+                             alt="Manual de Minecraft">
+            
+                        <h3>Manual del Explorador</h3>
+            
+                        <button type="button" onclick="comprar('Manual de Minecraft')">
+                            Comprar
+                        </button>
+                    </div>
+            
+                    <div class="manual">
+                        <img src="../imagenes/images.jpg"
+                             alt="Guía de Minecraft">
+            
+                        <h3>Manual Creativo</h3>
+            
+                        <button type="button" onclick="comprar('Guía de Minecraft')">
+                            Comprar
+                        </button>
+                    </div>
+            
+                    <div class="manual">
+                        <img src="../imagenes/6965c361-ec64-43db-9524-d8de1fa6d3eb_cover.webp"
+                             alt="Guía de Construcción">
+            
+                        <h3>Manual de Supervivencia</h3>
+            
+                        <button type="button" onclick="comprar('Guía de Construcción')">
+                            Comprar
+                        </button>
+                    </div>
+            
+                    <div class="manual">
+                        <img src="../imagenes/8315452a-8c5f-40ee-adbc-932cb2b1d6cb_cover.webp"
+                             alt="Manual para Aventureros">
+            
+                        <h3>Manual de Combate</h3>
+            
+                        <button type="button" onclick="comprar('Manual para Aventureros')">
+                            Comprar
+                        </button>
+                    </div>
+            
+                </div>
+            
+            </section>
+
+            <section class="redes">
+                <p>Nuestras redes sociales</p>
+                <a href="https://www.youtube.com/minecraft"><i class="fa-brands fa-youtube fa-2x" style="color: rgb(255, 0, 0);"></i></a>
+                <a href="https://www.instagram.com/minecraft/"><i class="fa-brands fa-instagram fa-2x" style="color: rgb(234, 59, 140);"></i></a>
+                <a href="https://www.tiktok.com/@minecraft"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+                <a href="https://www.whatsapp.com/channel/0029VakYS0uKLaHg2yxV2T1p"><i class="fa-brands fa-whatsapp fa-2x" style="color: rgb(12, 189, 18);"></i></a>   
+            </section>
+
+        </main>
+
+        <footer>
+
+            <p>Mojang Studios</p>
+            <p>© 2026 Mojang AB. TM Microsoft Corporation.</p>
+            <p>Directrices de uso de Minecraft || Administrar consentimiento</p>
+            <p>Privacidad y cookies</p>
+            <p>Términos de uso</p>
+
+        </footer>
+        <script src="../js/tutoriales.js"></script>
+    </body>
+
+</html>
